@@ -9,8 +9,10 @@ const Home = () => {
         setExpand(!expand)
    }
 
+   electron.visionAPI.getExpand(expand)
    useEffect (()=> {
      console.log(expand)
+    
    },[expand])
 
 
